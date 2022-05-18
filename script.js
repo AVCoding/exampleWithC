@@ -1,10 +1,5 @@
     window.onload = async function() { 
 
-    	// copy info from functions.js
-    	var info = {
-		    'env': asmLibraryArg,
-		    'wasi_snapshot_preview1': asmLibraryArg,
-		  };
 
      	let response = await fetch('functions.wasm');
         let bytes = await response.arrayBuffer();
