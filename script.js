@@ -1,7 +1,5 @@
     window.onload = async function() { 
-	    
-	    
-	    
+
 	// copy asmLibraryArg from functions.js
 	var asmLibraryArg = {};
 
