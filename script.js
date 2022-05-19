@@ -1,5 +1,7 @@
     window.onload = async function() { 
 	    
+	    
+	    
 	// copy asmLibraryArg from functions.js
 	var asmLibraryArg = {};
 
@@ -9,7 +11,7 @@
 	    'wasi_snapshot_preview1': asmLibraryArg,
 	  };
 
-	let wasmMemory =  new WebAssembly.Memory({ initial: 256, maximum: 256}); // Wasm memory 
+	// let wasmMemory =  new WebAssembly.Memory({ initial: 256, maximum: 256}); // Wasm memory 
 
 	let wasmExports = null;
      	let response = await fetch('functions.wasm');
