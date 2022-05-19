@@ -16,7 +16,12 @@
         console.log(wasmExports);
 
         document.getElementById('getSqrbtn').addEventListener("click", function(){
-        	document.getElementById('result').innerText =  _getSqr( document.getElementById('sqrinput').value ); 
+        	document.getElementById('result').innerText =   wasmExports.getSqr( document.getElementById('sqrinput').value ); 
         });
+
+	//2-nd version
+        //document.getElementById('getSqrbtn').addEventListener("click", function(){
+        	//document.getElementById('result').innerText =  _getSqr( document.getElementById('sqrinput').value ); 
+        //});
 
     }
